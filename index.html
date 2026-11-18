@@ -1,237 +1,318 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kilian — Junior Back-end Software Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kilian — Full-stack Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav">
+      <span class="nav-logo">KB<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- NAV -->
-  <nav class="nav">
-    <span class="nav-logo">KB<span class="accent">.</span></span>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero" id="about">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">
-        <span class="terminal-dot"></span> Open to opportunities
-      </p>
-      <h1 class="hero-name">Kilian<br /><span class="accent"></span></h1>
-      <div class="hero-terminal">
-        <span class="terminal-prompt">$ </span>
-        <span class="terminal-text" id="terminal-text"></span>
-        <span class="terminal-cursor">|</span>
+    <!-- HERO -->
+    <section class="hero" id="about">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">
+          <span class="terminal-dot"></span> Open to opportunities
+        </p>
+        <h1 class="hero-name">Kilian<br /><span class="accent"></span></h1>
+        <div class="hero-terminal">
+          <span class="terminal-prompt">$ </span>
+          <span class="terminal-text" id="terminal-text"></span>
+          <span class="terminal-cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          Full-stack developer passionate about building clean, secure and
+          maintainable systems.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View my projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
       </div>
-      <p class="hero-desc">
-        Junior back-end developer passionate about building clean,
-        secure and maintainable systems.
-      </p>
-      <div class="hero-ctas">
-        <a href="#projects" class="btn btn-primary">View my projects</a>
-        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      <div class="hero-scroll-hint">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
       </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SKILLS -->
-  <section class="section" id="skills">
-    <div class="container">
-      <p class="section-label">// Skills</p>
-      <h2 class="section-title">Technical stack</h2>
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="section-label">// Skills</p>
+        <h2 class="section-title">Technical stack</h2>
 
-      <div class="skills-grid">
+        <div class="skills-grid">
+          <div class="skill-card" data-delay="0">
+            <div class="skill-icon">{ }</div>
+            <h3>Languages</h3>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-bar"><span style="--w: 90%"></span></span
+                >JavaScript
+              </li>
+              <li>
+                <span class="skill-bar"><span style="--w: 90%"></span></span
+                >Python
+              </li>
+              <li>
+                <span class="skill-bar"><span style="--w: 80%"></span></span>SQL
+              </li>
+              <li>
+                <span class="skill-bar"><span style="--w: 80%"></span></span
+                >HTML / CSS / vanilla JS
+              </li>
+            </ul>
+          </div>
 
-        <div class="skill-card" data-delay="0">
-          <div class="skill-icon">{ }</div>
-          <h3>Languages</h3>
-          <ul class="skill-list">
-            <li><span class="skill-bar"><span style="--w:70%"></span></span>C++</li>
-            <li><span class="skill-bar"><span style="--w:90%"></span></span>Python</li>
-            <li><span class="skill-bar"><span style="--w:60%"></span></span>SQL</li>
-            <li><span class="skill-bar"><span style="--w:80%"></span></span>HTML / CSS / JS</li>
-          </ul>
+          <div class="skill-card" data-delay="100">
+            <div class="skill-icon">⚙</div>
+            <h3>Frameworks & DB</h3>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-bar"><span style="--w: 90%"></span></span
+                >Node.js
+              </li>
+              <li>
+                <span class="skill-bar"><span style="--w: 90%"></span></span
+                >Express
+              </li>
+              <li>
+                <span class="skill-bar"><span style="--w: 75%"></span></span
+                >PostgreSQL
+              </li>
+              <li>
+                <span class="skill-bar"><span style="--w: 75%"></span></span
+                >React
+              </li>
+              <li>
+                <span class="skill-bar"><span style="--w: 80"></span></span
+                >Other Frameworks(Flask, Fast API, etc..)
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-card" data-delay="200">
+            <div class="skill-icon">#</div>
+            <h3>Tools & Concepts</h3>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-bar"><span style="--w: 80%"></span></span>Git
+                / GitHub
+              </li>
+              <li>
+                <span class="skill-bar"><span style="--w: 75%"></span></span
+                >Linux CLI
+              </li>
+              <li>
+                <span class="skill-bar"><span style="--w: 90%"></span></span
+                >Secure Authentication
+              </li>
+              <li>
+                <span class="skill-bar"><span style="--w: 100%"></span></span
+                >MVC Architecture
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-card" data-delay="300">
+            <div class="skill-icon">🌐</div>
+            <h3>Languages</h3>
+            <ul class="skill-list lang-list">
+              <li><span class="lang-badge native">Native</span>French</li>
+              <li>
+                <span class="lang-badge bilingual">Bilingual</span>English
+              </li>
+              <li><span class="lang-badge bilingual">Bilingual</span>German</li>
+              <li>
+                <span class="lang-badge bilingual">Bilingual</span>Luxembourgish
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div class="skill-card" data-delay="100">
-          <div class="skill-icon">⚙</div>
-          <h3>Frameworks & DB</h3>
-          <ul class="skill-list">
-            <li><span class="skill-bar"><span style="--w:75%"></span></span>Flask (Blueprints, MVC)</li>
-            <li><span class="skill-bar"><span style="--w:75%"></span></span>NODE.JS</li>
-            <li><span class="skill-bar"><span style="--w:75%"></span></span>REST API</li>
-            <li><span class="skill-bar"><span style="--w:75%"></span></span>FAST API</li>
-            <li><span class="skill-bar"><span style="--w:72%"></span></span>SQLite</li>
-          </ul>
-        </div>
-
-        <div class="skill-card" data-delay="200">
-          <div class="skill-icon">#</div>
-          <h3>Tools & Concepts</h3>
-          <ul class="skill-list">
-            <li><span class="skill-bar"><span style="--w:80%"></span></span>Git / GitHub</li>
-            <li><span class="skill-bar"><span style="--w:75%"></span></span>Linux CLI</li>
-            <li><span class="skill-bar"><span style="--w:70%"></span></span>Secure Authentication</li>
-            <li><span class="skill-bar"><span style="--w:65%"></span></span>MVC Architecture</li>
-          </ul>
-        </div>
-
-        <div class="skill-card" data-delay="300">
-          <div class="skill-icon">🌐</div>
-          <h3>Languages</h3>
-          <ul class="skill-list lang-list">
-            <li><span class="lang-badge native">Native</span>French</li>
-            <li><span class="lang-badge bilingual">Bilingual</span>English</li>
-            <li><span class="lang-badge bilingual">Bilingual</span>German</li>
-            <li><span class="lang-badge bilingual">Bilingual</span>Luxembourgish</li>
-          </ul>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECTS -->
-  <section class="section section-dark" id="projects">
-    <div class="container">
-      <p class="section-label">// Projects</p>
-      <h2 class="section-title">What I've built</h2>
- 
-      <div class="projects-grid">
- 
-        <div class="project-card featured" data-delay="0">
-          <div class="project-tag">Main project</div>
-          <h3 class="project-title">Social Network</h3>
-          <p class="project-desc">
-            Built a REST backend for profiles, posts, likes, comments and bookmarks using a layered controller/model/route architecture.
-            Designed a relational PostgreSQL schema with foreign keys and parameterized queries, plus authentication middleware protecting API
-            routes.
-            Implemented server-side sessions, bcrypt password hashing and HTTP-only cookies for account authentication.
-          </p>
-          <div class="project-stack">
-            <span>Full-stack</span><span>Node.js</span><span>PostgreSQL</span><span>MVC</span>
-          </div>
-          <div class="project-highlights">
-            <div class="highlight"><span class="hl-num">0</span><span class="hl-label">plaintext credentials</span></div>
-            <div class="highlight"><span class="hl-num">100%</span><span class="hl-label">hashed password</span></div>
-          </div>
-          <a href="https://github.com/Yusko0o/twitter" target="_blank" class="project-link">
-            View on GitHub →
-          </a>
-        </div>
- 
-        <div class="project-card" data-delay="100">
-          <div class="project-tag">C++ / vulkan</div>
-          <h3 class="project-title">NeuroScan — 3D Visualization Engine </h3>
-          <p class="project-desc">
-            Built a real-time Vulkan renderer for a 195,000+ vertex model imported with Assimp, using custom GLSL shaders compiled to SPIR-V.
-            Integrated offscreen color/depth rendering into Qt Quick with depth testing, alpha blending, dynamic viewport handling and an interactive
-            orbital camera.
-            Added CTest coverage for camera geometry and a smoke test validated on Windows and Linux builds.
-          </p>
-          <div class="project-stack">
-            <span>C++</span><span>Vulkan</span><span>3D Engine</span>
-          </div>
-          <a href="https://github.com/Yusko0o/NeuroScan" target="_blank" class="project-link">
-            View on GitHub →
-          </a>
-        </div>
- 
-        <div class="project-card" data-delay="200">
-          <div class="project-tag">Algorithms Leetcode</div>
-          <h3 class="project-title">C++ Algorithms</h3>
-          <p class="project-desc">
-            Algorithmic challenges: linked lists, sorting algorithms,
-            time and space complexity analysis.
-          </p>
-          <div class="project-stack">
-            <span>C++</span><span>DSA</span>
-          </div>
-        </div>
- 
-        <div class="project-card" data-delay="300">
-          <div class="project-tag">TripPilot</div>
-          <h3 class="project-title">Website to help you plan your next trip</h3>
-          <p class="project-desc">
-            TripPilot is a full-stack travel planning application built with React, Python, and Flask. 
-            It allows users to search for airports, 
-            check real-time weather, discover hotels and activities, and access offers from multiple airlines. 
-            The application also includes secure authentication, favorites management, geolocation, dark mode, 
-            and bilingual support. It uses PostgreSQL with Neon and is deployed on Render.
-          </p>
-          <div class="project-stack">
-            <span>Full-stack</span><span>Flask</span>
-            <a href="https://trippilot-irs3.onrender.com/" target="_blank" class="project-link">
-            View Website →
+    <!-- PROJECTS -->
+    <section class="section section-dark" id="projects">
+      <div class="container">
+        <p class="section-label">// Projects</p>
+        <h2 class="section-title">What I've built</h2>
+
+        <div class="projects-grid">
+          <div class="project-card featured" data-delay="0">
+            <div class="project-tag">Main project</div>
+            <h3 class="project-title">Social Network</h3>
+            <p class="project-desc">
+              Built a REST backend for profiles, posts, likes, comments and
+              bookmarks using a layered controller/model/route architecture.
+              Designed a relational PostgreSQL schema with foreign keys and
+              parameterized queries, plus authentication middleware protecting
+              API routes. Implemented server-side sessions, bcrypt password
+              hashing and HTTP-only cookies for account authentication.
+            </p>
+            <div class="project-stack">
+              <span>Full-stack</span><span>Node.js</span><span>PostgreSQL</span
+              ><span>MVC</span>
+            </div>
+            <div class="project-highlights">
+              <div class="highlight">
+                <span class="hl-num">0</span
+                ><span class="hl-label">plaintext credentials</span>
+              </div>
+              <div class="highlight">
+                <span class="hl-num">100%</span
+                ><span class="hl-label">hashed password</span>
+              </div>
+            </div>
+            <a
+              href="https://github.com/Yusko0o/twitter"
+              target="_blank"
+              class="project-link"
+            >
+              View on GitHub →
             </a>
           </div>
-        </div>
- 
-        <div class="project-card" data-delay="400">
-          <div class="project-tag">Job scraping</div>
-          <h3 class="project-title">Job scraper</h3>
-          <p class="project-desc">
-            Easy job scraper to use in terminal with customized keywords and commands
-          </p>
-          <div class="project-stack">
-            <span>Python</span><span>Adzuna API</span><span>REST</span>
-            <a href="https://github.com/Yusko0o/job-scraper" target="_blank" class="project-link">
-            View on GitHub →
+
+          <div class="project-card" data-delay="300">
+            <div class="project-tag">TripPilot</div>
+            <h3 class="project-title">
+              Website to help you plan your next trip
+            </h3>
+            <p class="project-desc">
+              TripPilot is a full-stack travel planning application built with
+              React, Python, and Flask. It allows users to search for airports,
+              check real-time weather, discover hotels and activities, and
+              access offers from multiple airlines. The application also
+              includes secure authentication, favorites management, geolocation,
+              dark mode, and bilingual support. It uses PostgreSQL with Neon and
+              is deployed on Render.
+            </p>
+            <div class="project-stack">
+              <span>Full-stack</span><span>Flask</span>
+              <a
+                href="https://trippilot-irs3.onrender.com/"
+                target="_blank"
+                class="project-link"
+              >
+                View Website →
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" data-delay="200">
+            <div class="project-tag">Algorithms Leetcode</div>
+            <h3 class="project-title">C++ Algorithms</h3>
+            <p class="project-desc">
+              Algorithmic challenges: linked lists, sorting algorithms, time and
+              space complexity analysis.
+            </p>
+            <div class="project-stack"><span>C++</span><span>DSA</span></div>
+          </div>
+
+          <div class="project-card" data-delay="100">
+            <div class="project-tag">C++ / vulkan</div>
+            <h3 class="project-title">NeuroScan — 3D Visualization Engine</h3>
+            <p class="project-desc">
+              Built a real-time Vulkan renderer for a 195,000+ vertex model
+              imported with Assimp, using custom GLSL shaders compiled to
+              SPIR-V. Integrated offscreen color/depth rendering into Qt Quick
+              with depth testing, alpha blending, dynamic viewport handling and
+              an interactive orbital camera. Added CTest coverage for camera
+              geometry and a smoke test validated on Windows and Linux builds.
+            </p>
+            <div class="project-stack">
+              <span>C++</span><span>Vulkan</span><span>3D Engine</span>
+            </div>
+            <a
+              href="https://github.com/Yusko0o/NeuroScan"
+              target="_blank"
+              class="project-link"
+            >
+              View on GitHub →
             </a>
           </div>
+
+          <div class="project-card" data-delay="400">
+            <div class="project-tag">Job scraping</div>
+            <h3 class="project-title">Job scraper</h3>
+            <p class="project-desc">
+              A French-language e-commerce experience inspired by Starbucks,
+              featuring a responsive interface, drink customization, a shopping
+              cart, registration, login, simulated orders, and a demo loyalty
+              program.
+            </p>
+            <div class="project-stack">
+              <span>Python</span><span>Adzuna API</span><span>REST</span>
+              <a
+                href="https://github.com/Yusko0o/job-scraper"
+                target="_blank"
+                class="project-link"
+              >
+                View on GitHub →
+              </a>
+            </div>
+          </div>
         </div>
- 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="container contact-container">
-      <p class="section-label">// Contact</p>
-      <h2 class="section-title">Let's work together</h2>
-      <p class="contact-desc">
-        Looking for a internship/junior back-end/software engineering position in remote/Luxembourg.
-        Open to any opportunity to contribute and grow.
-      </p>
-      <div class="contact-links">
-        <a href="mailto:kilianberardino@gmail.com" class="contact-item">
-          <span class="contact-icon">✉</span>
-          kilianberardino@gmail.com
-        </a>
-        <a href="https://github.com/Yusko0o" target="_blank" class="contact-item">
-          <span class="contact-icon">⌥</span>
-          github.com/Yusko0o
-        </a>
-        <a href="https://linkedin.com/in/kilian-b-dev" target="_blank" class="contact-item">
-          <span class="contact-icon">in</span>
-          linkedin.com/in/kilian-b-dev
-        </a>
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact-container">
+        <p class="section-label">// Contact</p>
+        <h2 class="section-title">Let's work together</h2>
+        <p class="contact-desc">
+          Looking for a internship/junior Full-stack/software engineering
+          position in remote/Luxembourg. Open to any opportunity to contribute
+          and grow.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:kilianberardino@gmail.com" class="contact-item">
+            <span class="contact-icon">✉</span>
+            kilianberardino@gmail.com
+          </a>
+          <a
+            href="https://github.com/Yusko0o"
+            target="_blank"
+            class="contact-item"
+          >
+            <span class="contact-icon">⌥</span>
+            github.com/Yusko0o
+          </a>
+          <a
+            href="https://linkedin.com/in/kilian-b-dev"
+            target="_blank"
+            class="contact-item"
+          >
+            <span class="contact-icon">in</span>
+            linkedin.com/in/kilian-b-dev
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <span>© 2026 Kilian</span>
-  </footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <span>© 2026 Kilian</span>
+    </footer>
 
-  <script src="script.js" defer></script>
-</body>
+    <script src="script.js" defer></script>
+  </body>
 </html>
